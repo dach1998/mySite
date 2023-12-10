@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav {
+    padding: 15px;
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    background-color: #007bff;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+nav a:hover {
+    box-shadow: 0px 0px 10px #ffffff;
+    background-color: white;
+    color: #007bff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.photo-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    background-color: #333;
+    color: #FFF;
+}
+
+.photo-card:hover {
+    box-shadow: 0 0 20px rgba(114, 12, 92, 0.75);
+}
+
+.photo-card img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.photo-card-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.photo-card h2 {
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+.photo-card .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.photo-card p {
+    max-width: 500px;
+    color: #fff;
+    margin: 5px 0;
+}
+
+/* Стили для модального окна */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.modal img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
