@@ -39,3 +39,33 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        margin: 0;
+        font-size: 20px;
+    }
+
+    p {
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    h1 {
+        margin: 0;
+        font-size: 12px;
+    }
+
+    p {
+        margin-bottom: 10px;
+        font-size: 7px;
+    }
+
+    button {
+        font-size: 7px;
+        padding: 5px;
+    }
+}
