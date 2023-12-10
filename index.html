@@ -9,6 +9,18 @@
 <body>
     <h1>Моя первая публичная страница!</h1>
     <p>Здесь я буду размещать итоги прохождения курса.</p>
-    <button>Посмотреть</button>
+    <button id="button_look">Посмотреть</button>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var button_look = document.getElementById('button_look');
+
+        // Обработчик при нажатии на кнопку
+        button_look.addEventListener('click', function() {
+            // Переход на другую страницу
+            window.location.href = "/photos.html";
+        });
+    });
+</script>
 </body>
 </html>
