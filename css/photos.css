@@ -107,7 +107,7 @@ main {
 }
 
 .photo-card p {
-    max-width: 500px;
+    max-width: 70%;
     color: #fff;
     margin: 5px 0;
 }
