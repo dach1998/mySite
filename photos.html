@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Публичная страница</title>
+    <link rel="stylesheet" href="css/photos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+            </ul>
+            <section>
+                <h1>Страница с фотками об итогах курса.</h1>
+                <p>Здесь я буду размещать все итоги прохождения курса.</p>
+            </section>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Карточка с фотографиями -->
+        <section class="photo-card" onclick="openModal('photos/10.12 пробное фото.png')">
+            <h2>Будущая карточка</h2>
+            <img src="photos/10.12 пробное фото.png" alt="Итоги курса">
+            
+            <div class="photo-card-content">
+                <p class="content">Будущее описание карточки                </p>
+                <p class="date">Дата: 10 декабря 2023</p>
+            </div>
+        </section>
+
+        <!-- Карточка с фотографиями -->
+        <section class="photo-card" onclick="openModal('photos/10.12 пробное фото.png')">
+            <h2>Будущая карточка</h2>
+            <img src="photos/10.12 пробное фото.png" alt="Итоги курса">
+            
+            <div class="photo-card-content">
+                <p>Будущее описание карточки</p>
+                <p class="date">Дата: 10 декабря 2023</p>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Модальное окно для отображения увеличенной фотографии -->
+    <div class="modal" id="myModal">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <img id="modal-img" src="" alt="Увеличенная фотография">
+    </div>
+
+
+    <script>
+    // Функция для открытия модального окна с увеличенной фотографией
+    function openModal(imgSrc) {
+        document.getElementById('modal-img').src = imgSrc;
+        document.getElementById('myModal').style.display = 'flex';
+    }
+
+    // Функция для закрытия модального окна
+    function closeModal() {
+        document.getElementById('myModal').style.display = 'none';
+    }
+
+    // Закрываем модальное окно при клике вне изображения
+    window.onclick = function(event) {
+        var modal = document.getElementById('myModal');
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    };
+    </script>
+</body>
+</html>
